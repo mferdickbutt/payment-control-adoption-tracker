@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Control Adoption Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Payment Control Adoption Tracker</h1>
+    <p class="lede">
+      Public metrics for named payment controls: adoption rate, exception counts, and
+      month-over-month (PoP) trend. The table below is embedded in this HTML at build
+      time so first paint — and any <code>curl</code> of the file — shows real numbers
+      without JavaScript.
+    </p>
+  </header>
+
+  <section aria-label="Summary">
+    <!--STATIC_KPIS-->
+<dl class="kpis"><div class="kpi"><dt>Controls tracked</dt><dd>6</dd></div><div class="kpi"><dt>Months in series</dt><dd>15</dd></div><div class="kpi"><dt>Latest period</dt><dd>2026-08</dd></div><div class="kpi"><dt>Average adoption</dt><dd>91.8%</dd></div><div class="kpi"><dt>Open exceptions</dt><dd>80</dd></div><div class="kpi"><dt>MoM improving</dt><dd>4</dd></div></dl>
+<!--/STATIC_KPIS-->
+  </section>
+
+  <section aria-label="Adoption table">
+    <h2>Control adoption by month</h2>
+    <p class="note">
+      Each cell is <strong>adoption rate</strong> (adopted ÷ eligible) and
+      <strong>exception count</strong>. PoP is the latest month versus the prior month.
+      JavaScript may filter rows; it is not required to see the data.
+    </p>
+    <div id="enhance-toolbar" class="toolbar hidden">
+      <label for="control-filter">Filter controls</label>
+      <input id="control-filter" type="search" placeholder="Name, ID, or owner">
+    </div>
+    <div class="table-wrap">
+      <!--STATIC_TABLE-->
+<table id="adoption-table" class="metrics">
+<caption>Payment control adoption rates and exception counts by month (as of 2026-08). PoP is latest month versus prior month.</caption>
+<thead><tr><th scope="col">ID</th><th scope="col">Control</th><th scope="col">Owner</th><th scope="col">2025-06</th><th scope="col">2025-07</th><th scope="col">2025-08</th><th scope="col">2025-09</th><th scope="col">2025-10</th><th scope="col">2025-11</th><th scope="col">2025-12</th><th scope="col">2026-01</th><th scope="col">2026-02</th><th scope="col">2026-03</th><th scope="col">2026-04</th><th scope="col">2026-05</th><th scope="col">2026-06</th><th scope="col">2026-07</th><th scope="col">2026-08</th><th scope="col">PoP trend</th></tr></thead>
+<tbody>
+<tr><th scope="row" class="id">INV-3WM</th><td class="name">Invoice three-way match</td><td class="owner">AP Operations</td><td><span class="rate">78.0%</span><span class="exc">51 exc</span></td><td><span class="rate">79.2%</span><span class="exc">49 exc</span></td><td><span class="rate">81.0%</span><span class="exc">47 exc</span></td><td><span class="rate">82.0%</span><span class="exc">44 exc</span></td><td><span class="rate">84.0%</span><span class="exc">41 exc</span></td><td><span class="rate">85.0%</span><span class="exc">39 exc</span></td><td><span class="rate">86.0%</span><span class="exc">36 exc</span></td><td><span class="rate">87.5%</span><span class="exc">38 exc</span></td><td><span class="rate">88.8%</span><span class="exc">34 exc</span></td><td><span class="rate">90.0%</span><span class="exc">31 exc</span></td><td><span class="rate">91.5%</span><span class="exc">28 exc</span></td><td><span class="rate">92.0%</span><span class="exc">27 exc</span></td><td><span class="rate">93.0%</span><span class="exc">24 exc</span></td><td><span class="rate">94.0%</span><span class="exc">22 exc</span></td><td><span class="rate">95.0%</span><span class="exc">21 exc</span></td><td class="pop pop-up">▲ 1.0%</td></tr>
+<tr><th scope="row" class="id">DUAL-AUTH</th><td class="name">Dual authorization (≥$10k)</td><td class="owner">Treasury</td><td><span class="rate">65.0%</span><span class="exc">28 exc</span></td><td><span class="rate">67.0%</span><span class="exc">27 exc</span></td><td><span class="rate">70.0%</span><span class="exc">25 exc</span></td><td><span class="rate">72.0%</span><span class="exc">24 exc</span></td><td><span class="rate">75.1%</span><span class="exc">22 exc</span></td><td><span class="rate">77.0%</span><span class="exc">21 exc</span></td><td><span class="rate">80.0%</span><span class="exc">18 exc</span></td><td><span class="rate">82.0%</span><span class="exc">19 exc</span></td><td><span class="rate">84.0%</span><span class="exc">17 exc</span></td><td><span class="rate">85.0%</span><span class="exc">16 exc</span></td><td><span class="rate">87.1%</span><span class="exc">15 exc</span></td><td><span class="rate">89.0%</span><span class="exc">14 exc</span></td><td><span class="rate">90.0%</span><span class="exc">13 exc</span></td><td><span class="rate">91.0%</span><span class="exc">12 exc</span></td><td><span class="rate">92.5%</span><span class="exc">11 exc</span></td><td class="pop pop-up">▲ 1.5%</td></tr>
+<tr><th scope="row" class="id">VEND-BAV</th><td class="name">Vendor bank-account verification</td><td class="owner">Vendor Master</td><td><span class="rate">40.0%</span><span class="exc">19 exc</span></td><td><span class="rate">43.1%</span><span class="exc">18 exc</span></td><td><span class="rate">46.2%</span><span class="exc">17 exc</span></td><td><span class="rate">50.0%</span><span class="exc">16 exc</span></td><td><span class="rate">54.2%</span><span class="exc">15 exc</span></td><td><span class="rate">58.1%</span><span class="exc">14 exc</span></td><td><span class="rate">60.0%</span><span class="exc">12 exc</span></td><td><span class="rate">62.9%</span><span class="exc">13 exc</span></td><td><span class="rate">66.0%</span><span class="exc">12 exc</span></td><td><span class="rate">69.0%</span><span class="exc">11 exc</span></td><td><span class="rate">71.8%</span><span class="exc">10 exc</span></td><td><span class="rate">74.1%</span><span class="exc">10 exc</span></td><td><span class="rate">75.9%</span><span class="exc">9 exc</span></td><td><span class="rate">77.8%</span><span class="exc">8 exc</span></td><td><span class="rate">80.0%</span><span class="exc">8 exc</span></td><td class="pop pop-up">▲ 2.2%</td></tr>
+<tr><th scope="row" class="id">DUP-PAY</th><td class="name">Duplicate payment detection</td><td class="owner">AP Controls</td><td><span class="rate">85.0%</span><span class="exc">63 exc</span></td><td><span class="rate">86.0%</span><span class="exc">58 exc</span></td><td><span class="rate">88.0%</span><span class="exc">54 exc</span></td><td><span class="rate">89.0%</span><span class="exc">50 exc</span></td><td><span class="rate">90.0%</span><span class="exc">46 exc</span></td><td><span class="rate">91.0%</span><span class="exc">43 exc</span></td><td><span class="rate">92.0%</span><span class="exc">39 exc</span></td><td><span class="rate">93.0%</span><span class="exc">41 exc</span></td><td><span class="rate">94.0%</span><span class="exc">36 exc</span></td><td><span class="rate">95.0%</span><span class="exc">33 exc</span></td><td><span class="rate">95.8%</span><span class="exc">30 exc</span></td><td><span class="rate">96.5%</span><span class="exc">28 exc</span></td><td><span class="rate">97.0%</span><span class="exc">26 exc</span></td><td><span class="rate">97.5%</span><span class="exc">24 exc</span></td><td><span class="rate">97.5%</span><span class="exc">24 exc</span></td><td class="pop pop-flat">→ 0.0%</td></tr>
+<tr><th scope="row" class="id">OFAC-SCR</th><td class="name">OFAC / sanctions screening</td><td class="owner">Compliance</td><td><span class="rate">92.0%</span><span class="exc">14 exc</span></td><td><span class="rate">93.0%</span><span class="exc">13 exc</span></td><td><span class="rate">94.0%</span><span class="exc">12 exc</span></td><td><span class="rate">95.0%</span><span class="exc">11 exc</span></td><td><span class="rate">96.0%</span><span class="exc">10 exc</span></td><td><span class="rate">97.0%</span><span class="exc">9 exc</span></td><td><span class="rate">98.0%</span><span class="exc">8 exc</span></td><td><span class="rate">98.0%</span><span class="exc">9 exc</span></td><td><span class="rate">98.0%</span><span class="exc">8 exc</span></td><td><span class="rate">98.5%</span><span class="exc">7 exc</span></td><td><span class="rate">98.8%</span><span class="exc">6 exc</span></td><td><span class="rate">99.0%</span><span class="exc">6 exc</span></td><td><span class="rate">99.2%</span><span class="exc">5 exc</span></td><td><span class="rate">99.3%</span><span class="exc">5 exc</span></td><td><span class="rate">99.0%</span><span class="exc">7 exc</span></td><td class="pop pop-down">▼ 0.3%</td></tr>
+<tr><th scope="row" class="id">SOD-PAY</th><td class="name">Segregation of duties (payment release)</td><td class="owner">Internal Audit</td><td><span class="rate">55.0%</span><span class="exc">22 exc</span></td><td><span class="rate">57.0%</span><span class="exc">21 exc</span></td><td><span class="rate">60.0%</span><span class="exc">20 exc</span></td><td><span class="rate">62.0%</span><span class="exc">19 exc</span></td><td><span class="rate">65.1%</span><span class="exc">18 exc</span></td><td><span class="rate">68.0%</span><span class="exc">17 exc</span></td><td><span class="rate">70.0%</span><span class="exc">15 exc</span></td><td><span class="rate">72.0%</span><span class="exc">16 exc</span></td><td><span class="rate">75.0%</span><span class="exc">14 exc</span></td><td><span class="rate">78.1%</span><span class="exc">13 exc</span></td><td><span class="rate">79.9%</span><span class="exc">12 exc</span></td><td><span class="rate">82.1%</span><span class="exc">11 exc</span></td><td><span class="rate">83.9%</span><span class="exc">10 exc</span></td><td><span class="rate">85.0%</span><span class="exc">10 exc</span></td><td><span class="rate">87.0%</span><span class="exc">9 exc</span></td><td class="pop pop-up">▲ 2.0%</td></tr>
+</tbody>
+</table>
+<!--/STATIC_TABLE-->
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Source data: <a href="data/controls.json"><code>data/controls.json</code></a>.
+      Re-render: <code>node scripts/render-static.js</code>.
+      Tests: <code>bash scripts/test.sh</code>.
+    </p>
+  </footer>
+
+  <script src="js/adoption.js"></script>
+  <script src="js/enhance.js"></script>
+</body>
+</html>
