@@ -1,0 +1,154 @@
+:root {
+  --bg: #f3f5f8;
+  --card: #ffffff;
+  --ink: #1b2430;
+  --muted: #5b6775;
+  --line: #d5dde6;
+  --accent: #0b4f8a;
+  --up: #0b7a4b;
+  --down: #b42318;
+  --flat: #5c6773;
+  --head: #eef3f8;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.45 "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.65rem;
+  letter-spacing: -0.02em;
+}
+
+.lede, .note {
+  color: var(--muted);
+  max-width: 62rem;
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1rem 0 0.5rem;
+}
+
+.toolbar.hidden { display: none; }
+
+.toolbar input {
+  font: inherit;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  min-width: 16rem;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 0;
+}
+
+.kpi {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+}
+
+.kpi dt {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.kpi dd {
+  margin: 0.2rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 650;
+}
+
+h2 { font-size: 1.1rem; margin: 0 0 0.6rem; }
+
+.table-wrap {
+  overflow-x: auto;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+table.metrics {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 72rem;
+  font-size: 0.82rem;
+}
+
+table.metrics caption {
+  caption-side: top;
+  text-align: left;
+  padding: 0.85rem 0.9rem 0.5rem;
+  font-weight: 600;
+}
+
+table.metrics th,
+table.metrics td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.45rem 0.5rem;
+  vertical-align: top;
+  text-align: right;
+  white-space: nowrap;
+}
+
+table.metrics thead th {
+  background: var(--head);
+  font-weight: 650;
+  position: sticky;
+  top: 0;
+}
+
+table.metrics .id,
+table.metrics .name,
+table.metrics .owner,
+table.metrics thead th:nth-child(-n+3) {
+  text-align: left;
+}
+
+table.metrics tbody th.id {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: var(--card);
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+.rate { display: block; font-weight: 650; }
+.exc { display: block; color: var(--muted); font-size: 0.75rem; }
+
+.pop-up { color: var(--up); font-weight: 650; }
+.pop-down { color: var(--down); font-weight: 650; }
+.pop-flat { color: var(--flat); }
+
+footer {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }

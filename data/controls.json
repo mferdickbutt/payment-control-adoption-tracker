@@ -1,0 +1,689 @@
+{
+  "meta": {
+    "title": "Payment Control Adoption Tracker",
+    "asOf": "2026-08",
+    "rateUnit": "0-1",
+    "exceptionUnit": "count",
+    "notes": "Adoption rate is adopted / eligible. Period-over-period (PoP) is latest month rate minus prior month rate."
+  },
+  "controls": [
+    {
+      "id": "INV-3WM",
+      "name": "Invoice three-way match",
+      "owner": "AP Operations",
+      "description": "Purchase order, receipt, and invoice must match before payment release.",
+      "months": [
+        {
+          "period": "2025-06",
+          "eligible": 1760,
+          "adopted": 1373,
+          "exceptions": 51,
+          "rate": 0.7801
+        },
+        {
+          "period": "2025-07",
+          "eligible": 1782,
+          "adopted": 1411,
+          "exceptions": 49,
+          "rate": 0.7918
+        },
+        {
+          "period": "2025-08",
+          "eligible": 1801,
+          "adopted": 1459,
+          "exceptions": 47,
+          "rate": 0.8101
+        },
+        {
+          "period": "2025-09",
+          "eligible": 1820,
+          "adopted": 1492,
+          "exceptions": 44,
+          "rate": 0.8198
+        },
+        {
+          "period": "2025-10",
+          "eligible": 1835,
+          "adopted": 1541,
+          "exceptions": 41,
+          "rate": 0.8398
+        },
+        {
+          "period": "2025-11",
+          "eligible": 1850,
+          "adopted": 1573,
+          "exceptions": 39,
+          "rate": 0.8503
+        },
+        {
+          "period": "2025-12",
+          "eligible": 1680,
+          "adopted": 1445,
+          "exceptions": 36,
+          "rate": 0.8601
+        },
+        {
+          "period": "2026-01",
+          "eligible": 1710,
+          "adopted": 1496,
+          "exceptions": 38,
+          "rate": 0.8749
+        },
+        {
+          "period": "2026-02",
+          "eligible": 1795,
+          "adopted": 1594,
+          "exceptions": 34,
+          "rate": 0.888
+        },
+        {
+          "period": "2026-03",
+          "eligible": 1860,
+          "adopted": 1674,
+          "exceptions": 31,
+          "rate": 0.9
+        },
+        {
+          "period": "2026-04",
+          "eligible": 1888,
+          "adopted": 1727,
+          "exceptions": 28,
+          "rate": 0.9147
+        },
+        {
+          "period": "2026-05",
+          "eligible": 1902,
+          "adopted": 1750,
+          "exceptions": 27,
+          "rate": 0.9201
+        },
+        {
+          "period": "2026-06",
+          "eligible": 1920,
+          "adopted": 1786,
+          "exceptions": 24,
+          "rate": 0.9302
+        },
+        {
+          "period": "2026-07",
+          "eligible": 1935,
+          "adopted": 1819,
+          "exceptions": 22,
+          "rate": 0.9401
+        },
+        {
+          "period": "2026-08",
+          "eligible": 1950,
+          "adopted": 1853,
+          "exceptions": 21,
+          "rate": 0.9503
+        }
+      ]
+    },
+    {
+      "id": "DUAL-AUTH",
+      "name": "Dual authorization (≥$10k)",
+      "owner": "Treasury",
+      "description": "Second approver required for payments at or above $10,000.",
+      "months": [
+        {
+          "period": "2025-06",
+          "eligible": 940,
+          "adopted": 611,
+          "exceptions": 28,
+          "rate": 0.65
+        },
+        {
+          "period": "2025-07",
+          "eligible": 955,
+          "adopted": 640,
+          "exceptions": 27,
+          "rate": 0.6702
+        },
+        {
+          "period": "2025-08",
+          "eligible": 962,
+          "adopted": 673,
+          "exceptions": 25,
+          "rate": 0.6996
+        },
+        {
+          "period": "2025-09",
+          "eligible": 980,
+          "adopted": 706,
+          "exceptions": 24,
+          "rate": 0.7204
+        },
+        {
+          "period": "2025-10",
+          "eligible": 990,
+          "adopted": 743,
+          "exceptions": 22,
+          "rate": 0.7505
+        },
+        {
+          "period": "2025-11",
+          "eligible": 1005,
+          "adopted": 774,
+          "exceptions": 21,
+          "rate": 0.7701
+        },
+        {
+          "period": "2025-12",
+          "eligible": 870,
+          "adopted": 696,
+          "exceptions": 18,
+          "rate": 0.8
+        },
+        {
+          "period": "2026-01",
+          "eligible": 910,
+          "adopted": 746,
+          "exceptions": 19,
+          "rate": 0.8198
+        },
+        {
+          "period": "2026-02",
+          "eligible": 980,
+          "adopted": 823,
+          "exceptions": 17,
+          "rate": 0.8398
+        },
+        {
+          "period": "2026-03",
+          "eligible": 1020,
+          "adopted": 867,
+          "exceptions": 16,
+          "rate": 0.85
+        },
+        {
+          "period": "2026-04",
+          "eligible": 1035,
+          "adopted": 901,
+          "exceptions": 15,
+          "rate": 0.8705
+        },
+        {
+          "period": "2026-05",
+          "eligible": 1048,
+          "adopted": 933,
+          "exceptions": 14,
+          "rate": 0.8903
+        },
+        {
+          "period": "2026-06",
+          "eligible": 1060,
+          "adopted": 954,
+          "exceptions": 13,
+          "rate": 0.9
+        },
+        {
+          "period": "2026-07",
+          "eligible": 1072,
+          "adopted": 976,
+          "exceptions": 12,
+          "rate": 0.9104
+        },
+        {
+          "period": "2026-08",
+          "eligible": 1085,
+          "adopted": 1004,
+          "exceptions": 11,
+          "rate": 0.9253
+        }
+      ]
+    },
+    {
+      "id": "VEND-BAV",
+      "name": "Vendor bank-account verification",
+      "owner": "Vendor Master",
+      "description": "Call-back / out-of-band confirmation before changing vendor disbursement details.",
+      "months": [
+        {
+          "period": "2025-06",
+          "eligible": 210,
+          "adopted": 84,
+          "exceptions": 19,
+          "rate": 0.4
+        },
+        {
+          "period": "2025-07",
+          "eligible": 218,
+          "adopted": 94,
+          "exceptions": 18,
+          "rate": 0.4312
+        },
+        {
+          "period": "2025-08",
+          "eligible": 225,
+          "adopted": 104,
+          "exceptions": 17,
+          "rate": 0.4622
+        },
+        {
+          "period": "2025-09",
+          "eligible": 232,
+          "adopted": 116,
+          "exceptions": 16,
+          "rate": 0.5
+        },
+        {
+          "period": "2025-10",
+          "eligible": 240,
+          "adopted": 130,
+          "exceptions": 15,
+          "rate": 0.5417
+        },
+        {
+          "period": "2025-11",
+          "eligible": 248,
+          "adopted": 144,
+          "exceptions": 14,
+          "rate": 0.5806
+        },
+        {
+          "period": "2025-12",
+          "eligible": 190,
+          "adopted": 114,
+          "exceptions": 12,
+          "rate": 0.6
+        },
+        {
+          "period": "2026-01",
+          "eligible": 205,
+          "adopted": 129,
+          "exceptions": 13,
+          "rate": 0.6293
+        },
+        {
+          "period": "2026-02",
+          "eligible": 238,
+          "adopted": 157,
+          "exceptions": 12,
+          "rate": 0.6597
+        },
+        {
+          "period": "2026-03",
+          "eligible": 255,
+          "adopted": 176,
+          "exceptions": 11,
+          "rate": 0.6902
+        },
+        {
+          "period": "2026-04",
+          "eligible": 262,
+          "adopted": 188,
+          "exceptions": 10,
+          "rate": 0.7176
+        },
+        {
+          "period": "2026-05",
+          "eligible": 270,
+          "adopted": 200,
+          "exceptions": 10,
+          "rate": 0.7407
+        },
+        {
+          "period": "2026-06",
+          "eligible": 278,
+          "adopted": 211,
+          "exceptions": 9,
+          "rate": 0.759
+        },
+        {
+          "period": "2026-07",
+          "eligible": 284,
+          "adopted": 221,
+          "exceptions": 8,
+          "rate": 0.7782
+        },
+        {
+          "period": "2026-08",
+          "eligible": 290,
+          "adopted": 232,
+          "exceptions": 8,
+          "rate": 0.8
+        }
+      ]
+    },
+    {
+      "id": "DUP-PAY",
+      "name": "Duplicate payment detection",
+      "owner": "AP Controls",
+      "description": "Invoice number, amount, and vendor matching to block duplicate disbursements.",
+      "months": [
+        {
+          "period": "2025-06",
+          "eligible": 4120,
+          "adopted": 3502,
+          "exceptions": 63,
+          "rate": 0.85
+        },
+        {
+          "period": "2025-07",
+          "eligible": 4188,
+          "adopted": 3602,
+          "exceptions": 58,
+          "rate": 0.8601
+        },
+        {
+          "period": "2025-08",
+          "eligible": 4210,
+          "adopted": 3705,
+          "exceptions": 54,
+          "rate": 0.88
+        },
+        {
+          "period": "2025-09",
+          "eligible": 4255,
+          "adopted": 3787,
+          "exceptions": 50,
+          "rate": 0.89
+        },
+        {
+          "period": "2025-10",
+          "eligible": 4300,
+          "adopted": 3870,
+          "exceptions": 46,
+          "rate": 0.9
+        },
+        {
+          "period": "2025-11",
+          "eligible": 4340,
+          "adopted": 3950,
+          "exceptions": 43,
+          "rate": 0.9101
+        },
+        {
+          "period": "2025-12",
+          "eligible": 3890,
+          "adopted": 3579,
+          "exceptions": 39,
+          "rate": 0.9201
+        },
+        {
+          "period": "2026-01",
+          "eligible": 4010,
+          "adopted": 3729,
+          "exceptions": 41,
+          "rate": 0.9299
+        },
+        {
+          "period": "2026-02",
+          "eligible": 4280,
+          "adopted": 4023,
+          "exceptions": 36,
+          "rate": 0.94
+        },
+        {
+          "period": "2026-03",
+          "eligible": 4410,
+          "adopted": 4190,
+          "exceptions": 33,
+          "rate": 0.9501
+        },
+        {
+          "period": "2026-04",
+          "eligible": 4465,
+          "adopted": 4278,
+          "exceptions": 30,
+          "rate": 0.9581
+        },
+        {
+          "period": "2026-05",
+          "eligible": 4500,
+          "adopted": 4343,
+          "exceptions": 28,
+          "rate": 0.9651
+        },
+        {
+          "period": "2026-06",
+          "eligible": 4535,
+          "adopted": 4397,
+          "exceptions": 26,
+          "rate": 0.9696
+        },
+        {
+          "period": "2026-07",
+          "eligible": 4560,
+          "adopted": 4446,
+          "exceptions": 24,
+          "rate": 0.975
+        },
+        {
+          "period": "2026-08",
+          "eligible": 4588,
+          "adopted": 4473,
+          "exceptions": 24,
+          "rate": 0.9749
+        }
+      ]
+    },
+    {
+      "id": "OFAC-SCR",
+      "name": "OFAC / sanctions screening",
+      "owner": "Compliance",
+      "description": "Payee screening against sanctions lists before release.",
+      "months": [
+        {
+          "period": "2025-06",
+          "eligible": 4580,
+          "adopted": 4214,
+          "exceptions": 14,
+          "rate": 0.9201
+        },
+        {
+          "period": "2025-07",
+          "eligible": 4610,
+          "adopted": 4287,
+          "exceptions": 13,
+          "rate": 0.9299
+        },
+        {
+          "period": "2025-08",
+          "eligible": 4644,
+          "adopted": 4365,
+          "exceptions": 12,
+          "rate": 0.9399
+        },
+        {
+          "period": "2025-09",
+          "eligible": 4680,
+          "adopted": 4446,
+          "exceptions": 11,
+          "rate": 0.95
+        },
+        {
+          "period": "2025-10",
+          "eligible": 4705,
+          "adopted": 4517,
+          "exceptions": 10,
+          "rate": 0.96
+        },
+        {
+          "period": "2025-11",
+          "eligible": 4730,
+          "adopted": 4588,
+          "exceptions": 9,
+          "rate": 0.97
+        },
+        {
+          "period": "2025-12",
+          "eligible": 4300,
+          "adopted": 4214,
+          "exceptions": 8,
+          "rate": 0.98
+        },
+        {
+          "period": "2026-01",
+          "eligible": 4408,
+          "adopted": 4320,
+          "exceptions": 9,
+          "rate": 0.98
+        },
+        {
+          "period": "2026-02",
+          "eligible": 4695,
+          "adopted": 4601,
+          "exceptions": 8,
+          "rate": 0.98
+        },
+        {
+          "period": "2026-03",
+          "eligible": 4810,
+          "adopted": 4738,
+          "exceptions": 7,
+          "rate": 0.985
+        },
+        {
+          "period": "2026-04",
+          "eligible": 4840,
+          "adopted": 4782,
+          "exceptions": 6,
+          "rate": 0.988
+        },
+        {
+          "period": "2026-05",
+          "eligible": 4866,
+          "adopted": 4817,
+          "exceptions": 6,
+          "rate": 0.9899
+        },
+        {
+          "period": "2026-06",
+          "eligible": 4890,
+          "adopted": 4851,
+          "exceptions": 5,
+          "rate": 0.992
+        },
+        {
+          "period": "2026-07",
+          "eligible": 4912,
+          "adopted": 4878,
+          "exceptions": 5,
+          "rate": 0.9931
+        },
+        {
+          "period": "2026-08",
+          "eligible": 4930,
+          "adopted": 4881,
+          "exceptions": 7,
+          "rate": 0.9901
+        }
+      ]
+    },
+    {
+      "id": "SOD-PAY",
+      "name": "Segregation of duties (payment release)",
+      "owner": "Internal Audit",
+      "description": "Initiator cannot be the releaser; system-enforced SoD on payment runs.",
+      "months": [
+        {
+          "period": "2025-06",
+          "eligible": 320,
+          "adopted": 176,
+          "exceptions": 22,
+          "rate": 0.55
+        },
+        {
+          "period": "2025-07",
+          "eligible": 328,
+          "adopted": 187,
+          "exceptions": 21,
+          "rate": 0.5701
+        },
+        {
+          "period": "2025-08",
+          "eligible": 335,
+          "adopted": 201,
+          "exceptions": 20,
+          "rate": 0.6
+        },
+        {
+          "period": "2025-09",
+          "eligible": 342,
+          "adopted": 212,
+          "exceptions": 19,
+          "rate": 0.6199
+        },
+        {
+          "period": "2025-10",
+          "eligible": 350,
+          "adopted": 228,
+          "exceptions": 18,
+          "rate": 0.6514
+        },
+        {
+          "period": "2025-11",
+          "eligible": 356,
+          "adopted": 242,
+          "exceptions": 17,
+          "rate": 0.6798
+        },
+        {
+          "period": "2025-12",
+          "eligible": 310,
+          "adopted": 217,
+          "exceptions": 15,
+          "rate": 0.7
+        },
+        {
+          "period": "2026-01",
+          "eligible": 318,
+          "adopted": 229,
+          "exceptions": 16,
+          "rate": 0.7201
+        },
+        {
+          "period": "2026-02",
+          "eligible": 348,
+          "adopted": 261,
+          "exceptions": 14,
+          "rate": 0.75
+        },
+        {
+          "period": "2026-03",
+          "eligible": 360,
+          "adopted": 281,
+          "exceptions": 13,
+          "rate": 0.7806
+        },
+        {
+          "period": "2026-04",
+          "eligible": 368,
+          "adopted": 294,
+          "exceptions": 12,
+          "rate": 0.7989
+        },
+        {
+          "period": "2026-05",
+          "eligible": 374,
+          "adopted": 307,
+          "exceptions": 11,
+          "rate": 0.8209
+        },
+        {
+          "period": "2026-06",
+          "eligible": 380,
+          "adopted": 319,
+          "exceptions": 10,
+          "rate": 0.8395
+        },
+        {
+          "period": "2026-07",
+          "eligible": 386,
+          "adopted": 328,
+          "exceptions": 10,
+          "rate": 0.8497
+        },
+        {
+          "period": "2026-08",
+          "eligible": 392,
+          "adopted": 341,
+          "exceptions": 9,
+          "rate": 0.8699
+        }
+      ]
+    }
+  ]
+}
